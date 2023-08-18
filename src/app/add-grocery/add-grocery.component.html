@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Grocery Item</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closePopup()">Cancel</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item>
+      <ion-label position="stacked">Item Name</ion-label>
+      <ion-input [(ngModel)]="newItem" name="newItem" placeholder="Enter item name"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" (click)="savePopup()">Save</ion-button>
+  </form>
+</ion-content>

@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissDialog()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Item Name</ion-label>
+    <ion-input [(ngModel)]="item" placeholder="Enter item name"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="saveDialog()">Save</ion-button>
+</ion-content>

@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Edit Grocery</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Edit Item</ion-label>
+    <ion-input [(ngModel)]="editedTitle"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="saveChanges()">Save</ion-button>
+</ion-content>
